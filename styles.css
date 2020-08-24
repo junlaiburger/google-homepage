@@ -1,0 +1,48 @@
+body {
+    height: 100vh;
+}
+
+nav {
+    position: relative;
+    top: 16px;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+}
+
+#left_nav {
+    position: absolute;
+    margin: 7px 0 0 10px;
+}
+
+#left_nav a {
+    display: inline-block;
+    padding-left: 15px;
+    color: #000;
+    opacity: 0.75;
+    text-decoration: none;
+    height: 15px;
+}
+
+#right_nav {
+    min-width: 181px;
+    z-index: 987;
+    display: flex;
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 7px 0 0 10px;
+    position: relative;
+    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+    -moz-user-select: -moz-none;
+    white-space: nowrap;
+    line-height: normal;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
