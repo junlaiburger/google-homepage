@@ -20,24 +20,39 @@ nav {
     color: #000;
     opacity: 0.75;
     text-decoration: none;
-    height: 15px;
+    line-height: 15px;
 }
 
-#right_nav {
+#flex-container {
+    display: flex;
     min-width: 181px;
     z-index: 987;
-    display: flex;
-    float: right;
+    float: right;                       /* without float right, the flex container width is max vp */
     padding-left: 30px;
     padding-right: 30px;
-    margin: 7px 0 0 10px;
     position: relative;
     text-align: right;
-    align-items: center;
-    justify-content: flex-end;
-    -moz-user-select: -moz-none;
-    white-space: nowrap;
+    align-items: center;                /* vertical alignment of flex items */
+    justify-content: flex-end;          /* horizontal alignment of flex items */
     line-height: normal;
+}
+
+#flex-1 {
+    white-space: nowrap;
+    padding-right: 15px;
+}
+
+#flex-1 a {
+    line-height: 24px;
+    display: inline-block;
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle;
+}
+
+#flex-1 a:nth-child(2) {
+    padding-left: 15px;
 }
 
 main {
