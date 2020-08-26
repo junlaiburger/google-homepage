@@ -1,5 +1,7 @@
 body {
-    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 nav {
@@ -37,22 +39,22 @@ nav {
     line-height: normal;
 }
 
-#flex-1 {
+.flex-1 {
     white-space: nowrap;
     padding-right: 15px;
 }
 
-#flex-1 a {
+.flex-1 #images {
+    padding-left: 15px;
+}
+
+.flex-1 a {
     line-height: 24px;
     display: inline-block;
     color: rgba(0,0,0,0.87);
     text-decoration: none;
     outline: none;
     vertical-align: middle;
-}
-
-#flex-1 a:nth-child(2) {
-    padding-left: 15px;
 }
 
 .flex-2 {
@@ -66,11 +68,28 @@ nav {
     text-decoration: none;
 }
 
-.flex-2 img {
-    opacity: 0.5;
+.flex-2 a.apps {
+    cursor: pointer;
 }
 
-.box {
+.apps-menu {
+    background-image: url('//ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+    background-size: 528px 68px;
+}
+
+.apps-menu-properties {
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    background-position: -132px -38px;
+    opacity: .55;
+}
+
+.sign-in-box {
     width: 43.3167px;
     border: 1px solid #4285f4;
     font-weight: bold;
@@ -83,14 +102,56 @@ nav {
     align-self: baseline;
 }
 
-#padding {
-    display: inline-block;
-    padding: 0 0 0 15px;
+main {
+    display: block;
+    padding-bottom: 35px;
 }
 
-main {
+#container {
+    line-height: normal;
+    margin-top: 47px;
+    height: 233px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+#searchbar {
+    margin-top: 0;
+    position: absolute;
+    top: 269px;
+    min-width: 980px;
+    width: 100%;
+    height: 140px;
+}
+
+#search {
+    width: 1139px;
+    margin: 0 auto;
+}
+
+.searchform {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 6px;
+}
+
+#searchform {
+    width: 584px;
+}
+
+#searchform .search-text {
+    width: 582px;
+}
+
+.search-text {
+    background: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
 }

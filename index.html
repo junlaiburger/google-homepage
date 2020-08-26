@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html/>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="reset.css" rel="stylesheet" type="text/css" media="all">
-        <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+        <link href="reset.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="all"/>
         <title>Google</title>
     </head>
     <body>
@@ -14,27 +14,37 @@
                 <a href="#" id="About">About</a><a href="#" id="Store">Store</a>
             </div>
             <div class="flex-container">
-                <div id='flex-1'>
+                <div class='flex-1'>
                     <a href="#" id="Gmail">Gmail</a><a href="#" id="images">Images</a>
                 </div>
                 <div class='flex-2'>
-                    <a href="#" id="menu"><img src='apps-menu.png' id="apps-menu" height="27px" width="30px"></a>
-                    <div id="padding"><a href="#" class="box">Sign in</a></div>
+                    <a href="#" class="apps-menu apps-menu-properties"></a>
+                    <div style="padding: 0 0 0 15px;"><a href="#" class="sign-in-box">Sign in</a></div>
                 </div>
             </div>
         </nav>
 
         <main>
-            <img id="hplogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" width="272" height="92">
-            <input type="text" placeholder=""required width="582px" height="44px"><br>
-            <button type="submit">Google Search</button>
-            <button type="submit">I'm Feeling Lucky</button><br>
-            <p>We stand in support of racial equality, and all those who search for it</p><br>
-            <p>Google offered in: Francais</p>            
+            <span style="display: block; min-width: 1139px; margin: 0 auto;">
+                <div id="container">
+                    <img id="hplogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" width="272px" height="92px" style="padding-top: 109px"/>
+                </div>
+                <div id="searchbar" class="search-properties">
+                    <form id="search" action="/search" style="overflow:visible" name="f">
+                        <div class="searchform" id="searchform">
+                            <input class="search-text" type="text" placeholder="" required />
+                            <button type="submit">Google Search</button>
+                            <button type="submit">I'm Feeling Lucky</button>
+                        </div>
+                    </form>
+                </div>
+                <p>We stand in support of racial equality, and all those who search for it</p><br>
+                <p>Google offered in: Francais</p>
+            </span>
         </main>
 
         <footer>
-            
+
         </footer>
     </body>
 </html>
