@@ -1,6 +1,7 @@
 html {
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -132,6 +133,16 @@ nav {
 main {
     display: block;
     padding-bottom: 35px;
+    line-height: normal;
+    height: 520px;
+    transition: 0.5s;
+}
+
+@media screen and (max-height: 563px) {
+    main {
+        height: 387px;
+        transition: 0.5s;
+    }
 }
 
 #container {
@@ -162,12 +173,14 @@ main {
         padding-top: 10px !important;
         height: 72px;
         width: auto;
+        transition: 0.5s;
     }
 }
 
 img {
     display: block;
     margin: 0 auto;
+    transition: 0.5s;
 }
 
 #search-field {
@@ -192,14 +205,9 @@ img {
     }
 }
 
-@media screen and (max-height: 563px) {
-    #search-field {
-        transform: translateY(-129px);
-    }
-}
-
 #search-field form {
     margin: 0 auto;
+    transition: 0.5s
 }
 
 .search-container {
@@ -299,7 +307,6 @@ input:invalid {
 }
 
 .button-field {
-    width: 584px;
     height: 70px;
     padding-top: 18px;
     text-align: center;
@@ -374,7 +381,7 @@ footer {
         line-height: 40px;
         min-width: 400px;
         border-top: 1px solid #e4e4e4;
-        bottom: -27px;
+        bottom: 0;
         transition: 0.5s;
     }
 }
@@ -422,4 +429,66 @@ footer a {
 #footer-left {
     float: left;
     margin-left: 30px;
+}
+
+@media screen and (max-height: 563px) {
+    #search-field {
+        transform: translateY(-129px);
+        transition: 0.5s;
+    }
+
+    #search-container-size {
+        max-width: 484px;
+    }
+
+    #search-flex-size {
+        width: auto;
+    }
+
+    #search-field form {
+        margin: 0 32px;
+        transition: 0.5s
+    }
+}
+
+#viewport {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    #footer-right {
+        display: block;
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+
+    #footer-left {
+        display: block;
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+
+    #search-field {
+        transform: translateY(-129px);
+        transition: 0.5s;
+    }
+
+    #search-container-size {
+        max-width: 484px;
+        width: auto;
+    }
+
+    #search-flex-size {
+        width: auto;
+    }
+
+    #search-field form {
+        margin: 0 32px;
+        transition: 0.5s
+    }
 }
